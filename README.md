@@ -29,6 +29,13 @@ This repo contains the source for LMMS's new website located at http://lmms.io.
 	> **Note:** For this to work on Windows you need the php.exe processor to be on your path, usually located in `c:\wamp\bin\php\phpx.y.z`
 	
 	For instructions for other OSs or for installing globally, visit Composer's [Getting Started](https://getcomposer.org/doc/00-intro.md) document.
+
+1. Install required system packages
+
+    On Linux systems, you may need to manually install the PHP `curl` extension. To do this on a Ubuntu system, run:
+    ```bash
+    $ sudo apt-get install php5-curl
+    ```
    
 1. Fetch dependencies using composer
 
@@ -39,6 +46,7 @@ This repo contains the source for LMMS's new website located at http://lmms.io.
 	```
    
 	You'll have to run this comand every time the dependencies in `composer.json` change.
+
 1. Configure local server
 	
 	Apache:
